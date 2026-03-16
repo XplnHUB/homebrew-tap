@@ -5,12 +5,12 @@
 class Lesgo < Formula
   desc "WhatsApp-style CLI chat with E2EE."
   homepage "https://github.com/XplnHUB/Les-Go"
-  version "1.1.0"
+  version "1.1.1"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/XplnHUB/Les-Go/releases/download/v1.1.0/Les-Go_1.1.0_darwin_amd64.tar.gz"
-      sha256 "5e4dfb51c504e4a52c0e38bd1b944ab9334f7c7af0771e71f9829c6e1b5b353a"
+      url "https://github.com/XplnHUB/Les-Go/releases/download/v1.1.1/Les-Go_1.1.1_darwin_amd64.tar.gz"
+      sha256 "4deb541c0d09f1ffd1bc42c7e39bbf4dead9a43c3f31e74f6ccf283d7605a8fd"
 
       define_method(:install) do
         bin.install "lesgo"
@@ -18,8 +18,8 @@ class Lesgo < Formula
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/XplnHUB/Les-Go/releases/download/v1.1.0/Les-Go_1.1.0_darwin_arm64.tar.gz"
-      sha256 "f57ee2da91e17ef9176a5716e2e85311e7713d59079f663625adf85e47352d8f"
+      url "https://github.com/XplnHUB/Les-Go/releases/download/v1.1.1/Les-Go_1.1.1_darwin_arm64.tar.gz"
+      sha256 "e2d65c30d3d2817af10b288a8bd098b03add7efb86147851b15875c237e7e369"
 
       define_method(:install) do
         bin.install "lesgo"
@@ -30,16 +30,16 @@ class Lesgo < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/XplnHUB/Les-Go/releases/download/v1.1.0/Les-Go_1.1.0_linux_amd64.tar.gz"
-      sha256 "1a6c881d7a4205e15e2184a2e218c57983f262910363bb965ac2922de33e5ce7"
+      url "https://github.com/XplnHUB/Les-Go/releases/download/v1.1.1/Les-Go_1.1.1_linux_amd64.tar.gz"
+      sha256 "f095dc88fd8e92cd2fffd54815cd46a9d79d46d1f87b9f009562404a9d7494a1"
       define_method(:install) do
         bin.install "lesgo"
         bin.install "server_bin"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/XplnHUB/Les-Go/releases/download/v1.1.0/Les-Go_1.1.0_linux_arm64.tar.gz"
-      sha256 "0a8a3b6734c9c42394af5fc241514694f8137cb413e90ee15580f32c737af8bd"
+      url "https://github.com/XplnHUB/Les-Go/releases/download/v1.1.1/Les-Go_1.1.1_linux_arm64.tar.gz"
+      sha256 "713bad7683d17645fbecd88a3ffe41774ae06b5921ff7770de675c65d59b2452"
       define_method(:install) do
         bin.install "lesgo"
         bin.install "server_bin"
